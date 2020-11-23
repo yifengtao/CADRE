@@ -36,11 +36,11 @@ parser.add_argument("--attention_head", help="number of attention heads", type=i
 parser.add_argument("--hidden_dim_enc", help="dimension of hidden layer in encoder", type=int, default=200) #200
 parser.add_argument("--use_hid_lyr", help="whether to use hidden layer in the encoder or not", type=bool_ext, default=False)
 
-parser.add_argument("--max_iter", help="maximum number of training iterations", type=int, default=int(768*100*2))
+parser.add_argument("--max_iter", help="maximum number of training iterations", type=int, default=int(384000))
 parser.add_argument("--dropout_rate", help="probability of an element to be zero-ed", type=float, default=0.6)#0.3
 
-parser.add_argument("--learning_rate", help="learning rate for Adam", type=float, default=0.03)
-parser.add_argument("--weight_decay", help="coefficient of l2 regularizer", type=float, default=0.0)#3e-4
+parser.add_argument("--learning_rate", help="learning rate for Adam", type=float, default=0.3)
+parser.add_argument("--weight_decay", help="coefficient of l2 regularizer", type=float, default=3e-4)#3e-4
 parser.add_argument("--batch_size", help="training batch size", type=int, default=8)#256
 parser.add_argument("--test_batch_size", help="test batch size", type=int, default=8)
 parser.add_argument("--test_inc_size", help="increment interval size between log outputs", type=int, default=1024)#64
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     if os.path.exists("data/output/cf-rep/logs"+str(trial)+".pkl"):
       continue
     print(trial)
-    with open("data/output/cf-rep/logs"+str(trial)+".pkl", "wb") as f:
+    with open("data/output/cf/logs"+str(trial)+".pkl", "wb") as f:
       pickle.dump(logs, f, protocol=2)
     break
 

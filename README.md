@@ -10,7 +10,21 @@ The critical modules of CADRE are contextual attention mechanism and collaborati
 
 Use the following script for training and evaluating the CADRE on the GDSC dataset:
 
-`python run_cf.py --repository gdsc --learning_rate 0.3 --dropout_rate 0.6 --attention_size 128 --attention_head 8 --max_iter 384000 --weight_decay 3e-4 --model_label cntx-attn-gdsc`
+`python run_cf.py --repository gdsc --model_label cntx-attn-gdsc`
+
+The output will be saved to `data/output/cf/`.
+
+## Data
+
+We prepared the preprocessed GDSC data under the directory `data/input/`. 
+* `gdsc.csv`: Discretized binary responses of cell lines to drugs.
+* `exp_gdsc.csv`: Discretized binary gene expression levels of cell lines.
+* `mut_gdsc.csv`: Discretized binary gene mutations of cell lines (Not used in the final work due to lack of information).
+* `cnv_gdsc.csv`: Discretized binary gene CNVs of cell lines (Not used in the final work due to lack of information).
+* `met_gdsc.csv`: Discretized binary gene methylations of cell lines (Not used in the final work due to lack of information).
+* `drug_info_gdsc.csv`: Information of drugs in the GDSC dataset.
+* `exp_emb_gdsc.csv`: 200-dim gene embeddings extracted from the Gene2Vec algorithm.
+* `rng.txt`: Random number generator for splitting the dataset.
 
 ## Citation
 

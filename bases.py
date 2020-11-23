@@ -226,7 +226,6 @@ class ExpEncoder(nn.Module):
     self.use_relu = use_relu
     self.repository = repository
 
-
     if init_gene_emb:
       if self.repository == 'gdsc':
         #GDSC dataset
