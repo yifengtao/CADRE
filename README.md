@@ -29,12 +29,20 @@ We prepared the preprocessed GDSC data under the directory `data/input/`.
 ## Citation
 
 If you find CADRE helpful, please cite the following paper: 
-Yifeng Tao<sup>＊</sup>, Shuangxia Ren<sup>＊</sup>, Michael Q. Ding, Russell Schwartz<sup>†</sup>, Xinghua Lu<sup>†</sup>. [**Predicting Drug Sensitivity of Cancer Cell Lines via Collaborative Filtering with Contextual Attention**](http://www.cs.cmu.edu/~yifengt/paper/tao2020cadre.pdf). Proceedings of the Machine Learning for Healthcare Conference (***MLHC***). 2020.
+Yifeng Tao<sup>＊</sup>, Shuangxia Ren<sup>＊</sup>, Michael Q. Ding, Russell Schwartz<sup>†</sup>, Xinghua Lu<sup>†</sup>. [**Predicting Drug Sensitivity of Cancer Cell Lines via Collaborative Filtering with Contextual Attention**](http://proceedings.mlr.press/v126/tao20a.html). Proceedings of the Machine Learning for Healthcare Conference (***MLHC***). 2020.
 ```
 @inproceedings{tao2020cadre,
   title = {Predicting Drug Sensitivity of Cancer Cell Lines via Collaborative Filtering with Contextual Attention},
   author = {Tao, Yifeng  and  Ren, Shuangxia  and  Ding, Michael Q.  and  Schwartz, Russell  and  Lu, Xinghua},
-  booktitle = {Machine Learning Research},
+  series = {Proceedings of Machine Learning Research},
+  volume = {126},
+  pages = {660--684},
   year = {2020},
+  month = {07--08 Aug},
+  editor = {Finale Doshi-Velez and Jim Fackler and Ken Jung and David Kale and Rajesh Ranganath and Byron Wallace and Jenna Wiens},
+  address = {Virtual},
+  publisher = {PMLR},
+  url = {http://proceedings.mlr.press/v126/tao20a.html},
+  pdf = {http://proceedings.mlr.press/v126/tao20a/tao20a.pdf},
 }
 ```
